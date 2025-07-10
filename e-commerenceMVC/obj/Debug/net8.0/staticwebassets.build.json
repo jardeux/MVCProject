@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eYBMdCnKpXgRXmEA/KY2ZDZLILMzD+Z/uXm7q8Wtcio=",
+  "Hash": "BjNSHbQKUdhVmYsZM+Mjq14M+b+UumRgTgxNvWbG0a0=",
   "Source": "e-commerenceMVC",
   "BasePath": "_content/e-commerenceMVC",
   "Mode": "Default",
@@ -136,8 +136,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "mpyigms19s",
-      "Integrity": "xlexqj9/k3uobVwGfciZcj/eDdooaNgcf4OFLtLUygM=",
+      "Fingerprint": "e3f37i84vt",
+      "Integrity": "1iG2Be0GLHmuN8+rP+uJEplnPvNQ+znvu1GzIiJkGog=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
@@ -1741,7 +1741,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "204136"
+          "Value": "316806"
         },
         {
           "Name": "Content-Type",
@@ -1749,11 +1749,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xlexqj9/k3uobVwGfciZcj/eDdooaNgcf4OFLtLUygM=\""
+          "Value": "\"1iG2Be0GLHmuN8+rP+uJEplnPvNQ+znvu1GzIiJkGog=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Jul 2025 20:00:53 GMT"
+          "Value": "Thu, 10 Jul 2025 16:16:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1763,7 +1763,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-xlexqj9/k3uobVwGfciZcj/eDdooaNgcf4OFLtLUygM="
+          "Value": "sha256-1iG2Be0GLHmuN8+rP+uJEplnPvNQ+znvu1GzIiJkGog="
         }
       ]
     },
@@ -1846,6 +1846,51 @@
         {
           "Name": "integrity",
           "Value": "sha256-DRvWr0gangj5/5Q3DRn6ttzpcWDzl3OpHoAwAzNDR5Q="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/css/bootstrap.e3f37i84vt.css",
+      "AssetFile": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "316806"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1iG2Be0GLHmuN8+rP+uJEplnPvNQ+znvu1GzIiJkGog=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Jul 2025 16:16:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e3f37i84vt"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/css/bootstrap.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1iG2Be0GLHmuN8+rP+uJEplnPvNQ+znvu1GzIiJkGog="
         }
       ]
     },
@@ -2010,51 +2055,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
-        }
-      ]
-    },
-    {
-      "Route": "lib/bootstrap/dist/css/bootstrap.mpyigms19s.css",
-      "AssetFile": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "204136"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xlexqj9/k3uobVwGfciZcj/eDdooaNgcf4OFLtLUygM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 08 Jul 2025 20:00:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "mpyigms19s"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/css/bootstrap.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-xlexqj9/k3uobVwGfciZcj/eDdooaNgcf4OFLtLUygM="
         }
       ]
     },
