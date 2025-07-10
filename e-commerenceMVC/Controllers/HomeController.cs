@@ -15,7 +15,7 @@ namespace e_commerenceMVC.Controllers
 
         public IActionResult Index()
         {
-            return View("merhaba");
+            return View();
         }
 
         public IActionResult Privacy()
