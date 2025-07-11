@@ -16,8 +16,8 @@ namespace e_commerenceMVC.Controllers
 
         public IActionResult Index()
         {
-            List<Models.Category> objCategoryList = _db.Categories.ToList();
-            return View(objCategoryList);
+            List<Models.Category> objCategoryList = _db.Categories.ToList(); // Veritabanındaki tüm kategorileri listelemek için kullanılır.
+            return View(objCategoryList); // objCategoryList listesini View'a gönderir.
         }
         public IActionResult Create()
         {
@@ -25,11 +25,22 @@ namespace e_commerenceMVC.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Category obj)
+        public IActionResult Create(Category obj) // Bu metod, Create sayfasında form gönderildiğinde tetiklenir.
         {
-            _db.Add(obj);
-            _db.SaveChanges();
-            return RedirectToAction("Index");
+            if(obj.Name == obj.DisplayOrder.ToString())
+            {
+                ModelState.AddModelError("name", "İsim ile display order aynı olamaz."); // Eğer Name ve DisplayOrder aynı ise, ModelState'e özel bir hata eklenir.
+            }
+            
+            if(ModelState.IsValid) 
+            {
+                //ModelState.IsValid kontrolü yapıldıktan sonra veritabanına ekleme işlemi yapılır.
+                _db.Categories.Add(obj);
+                _db.SaveChanges();
+                return RedirectToAction("Index"); //Eğer veritabanına ekleme işlemi başarılı ise Index sayfasına yönlendirme yapılır.
+            }
+                return View(); //Eğer ModelState.IsValid kontrolü başarısız ise, tekrar Create sayfasına yönlendirme yapılır.
+
         }
     }
 }

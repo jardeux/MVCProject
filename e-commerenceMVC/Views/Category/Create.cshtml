@@ -10,14 +10,17 @@
 			
 
 		</div>
+		<div asp-validation-summary="All"></div> 
 		<div class="mb-3">
 			<label asp-for="Name"></label>
 			<input asp-for="Name" type="text" class="form-control"/>
+			<span asp-validation-for="Name" class="text-danger"></span>
 
 		</div>
 		<div class="mb-3">
 			<label asp-for="DisplayOrder"></label>
 			<input asp-for="DisplayOrder "type="text" class="form-control" />
+			<span asp-validation-for="DisplayOrder" class="text-danger"></span>
 
 		</div>
 		<div class="d-flex justify-content-center">

@@ -25,10 +25,10 @@
 		</tr>
 	</thead>
 	<tbody>
-		@foreach(var obj in Model.OrderByDescending(u => u.DisplayOrder)) //sıralama yaptık display ordera göre
+		@foreach(var obj in Model.OrderBy(u => u.DisplayOrder)) //sıralama yaptık display ordera göre
 		{
 			<tr>
-			<td>@obj.Name</td>
+				<td>@obj.Name</td>
 				<td>@obj.DisplayOrder</td>
 			</tr>
 		}
