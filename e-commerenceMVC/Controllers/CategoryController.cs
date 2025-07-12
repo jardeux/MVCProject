@@ -43,6 +43,7 @@ namespace e_commerenceMVC.Controllers
             {
                 //ModelState.IsValid kontrolü yapıldıktan sonra veritabanına ekleme işlemi yapılır.
                 _db.Categories.Add(obj);
+                TempData["success"] = "Kategori başarıyla eklendi."; // TempData kullanılarak başarılı ekleme mesajı saklanır.
                 _db.SaveChanges();
                 return RedirectToAction("Index"); //Eğer veritabanına ekleme işlemi başarılı ise Index sayfasına yönlendirme yapılır.
             }
@@ -82,6 +83,7 @@ namespace e_commerenceMVC.Controllers
             {
                 //ModelState.IsValid kontrolü yapıldıktan sonra veritabanına ekleme işlemi yapılır.
                 _db.Categories.Update(obj);
+                TempData["success"] = "Kategori başarıyla güncellendi."; // TempData kullanılarak başarılı güncelleme mesajı saklanır.
                 _db.SaveChanges();
                 return RedirectToAction("Index"); //Eğer veritabanına ekleme işlemi başarılı ise Index sayfasına yönlendirme yapılır.
             }
@@ -111,6 +113,7 @@ namespace e_commerenceMVC.Controllers
                 return NotFound();
             }
             _db.Categories.Remove(obj); // Kategori silinir.
+            TempData["success"] = "Kategori başarıyla silindi."; // TempData kullanılarak başarılı silme mesajı saklanır.
             _db.SaveChanges(); // Veritabanına kaydedilir.
             return RedirectToAction("Index"); // Silme işlemi başarılı ise Index sayfasına yönlendirme yapılır
         }
