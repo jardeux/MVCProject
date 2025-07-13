@@ -1,0 +1,12 @@
+C:\Users\umut5\e-commerenceMVC\Ecommerence.Utility\bin\Debug\net8.0\Ecommerence.Utility.deps.json
+C:\Users\umut5\e-commerenceMVC\Ecommerence.Utility\bin\Debug\net8.0\Ecommerence.Utility.dll
+C:\Users\umut5\e-commerenceMVC\Ecommerence.Utility\bin\Debug\net8.0\Ecommerence.Utility.pdb
+C:\Users\umut5\e-commerenceMVC\Ecommerence.Utility\obj\Debug\net8.0\Ecommerence.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\umut5\e-commerenceMVC\Ecommerence.Utility\obj\Debug\net8.0\Ecommerence.Utility.AssemblyInfoInputs.cache
+C:\Users\umut5\e-commerenceMVC\Ecommerence.Utility\obj\Debug\net8.0\Ecommerence.Utility.AssemblyInfo.cs
+C:\Users\umut5\e-commerenceMVC\Ecommerence.Utility\obj\Debug\net8.0\Ecommerence.Utility.csproj.CoreCompileInputs.cache
+C:\Users\umut5\e-commerenceMVC\Ecommerence.Utility\obj\Debug\net8.0\Ecommerence.Utility.sourcelink.json
+C:\Users\umut5\e-commerenceMVC\Ecommerence.Utility\obj\Debug\net8.0\Ecommerence.Utility.dll
+C:\Users\umut5\e-commerenceMVC\Ecommerence.Utility\obj\Debug\net8.0\refint\Ecommerence.Utility.dll
+C:\Users\umut5\e-commerenceMVC\Ecommerence.Utility\obj\Debug\net8.0\Ecommerence.Utility.pdb
+C:\Users\umut5\e-commerenceMVC\Ecommerence.Utility\obj\Debug\net8.0\ref\Ecommerence.Utility.dll

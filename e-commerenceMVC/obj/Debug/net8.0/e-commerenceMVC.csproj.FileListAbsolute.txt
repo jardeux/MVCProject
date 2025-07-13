@@ -257,3 +257,9 @@ C:\Users\umut5\e-commerenceMVC\e-commerenceMVC\bin\Debug\net8.0\runtimes\win\lib
 C:\Users\umut5\e-commerenceMVC\e-commerenceMVC\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\umut5\e-commerenceMVC\e-commerenceMVC\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\umut5\e-commerenceMVC\e-commerenceMVC\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\umut5\e-commerenceMVC\e-commerenceMVC\bin\Debug\net8.0\Ecommerence.DataAccess.dll
+C:\Users\umut5\e-commerenceMVC\e-commerenceMVC\bin\Debug\net8.0\Ecommerence.Models.dll
+C:\Users\umut5\e-commerenceMVC\e-commerenceMVC\bin\Debug\net8.0\Ecommerence.Utility.dll
+C:\Users\umut5\e-commerenceMVC\e-commerenceMVC\bin\Debug\net8.0\Ecommerence.DataAccess.pdb
+C:\Users\umut5\e-commerenceMVC\e-commerenceMVC\bin\Debug\net8.0\Ecommerence.Models.pdb
+C:\Users\umut5\e-commerenceMVC\e-commerenceMVC\bin\Debug\net8.0\Ecommerence.Utility.pdb

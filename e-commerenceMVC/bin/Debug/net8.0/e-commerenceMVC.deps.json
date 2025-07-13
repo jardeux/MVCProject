@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "e-commerenceMVC/1.0.0": {
         "dependencies": {
+          "Ecommerence.DataAccess": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.0-preview.1.23111.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0-preview.1.23111.4",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.0-preview.1.23111.4",
@@ -1859,6 +1860,38 @@
             "fileVersion": "7.0.22.51805"
           }
         }
+      },
+      "Ecommerence.DataAccess/1.0.0": {
+        "dependencies": {
+          "Ecommerence.Models": "1.0.0",
+          "Ecommerence.Utility": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.0-preview.1.23111.4",
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.0-preview.1.23111.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0-preview.1.23111.4",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.7"
+        },
+        "runtime": {
+          "Ecommerence.DataAccess.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Ecommerence.Models/1.0.0": {
+        "runtime": {
+          "Ecommerence.Models.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Ecommerence.Utility/1.0.0": {
+        "runtime": {
+          "Ecommerence.Utility.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -2966,6 +2999,21 @@
       "sha512": "sha512-bR4qdCmssMMbo9Fatci49An5B1UaVJZHKNq70PRgzoLYIlitb8Tj7ns/Xt5Pz1CkERiTjcVBDU2y1AVrPBYkaw==",
       "path": "system.windows.extensions/7.0.0",
       "hashPath": "system.windows.extensions.7.0.0.nupkg.sha512"
+    },
+    "Ecommerence.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ecommerence.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ecommerence.Utility/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
