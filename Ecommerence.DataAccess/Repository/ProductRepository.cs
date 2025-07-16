@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using e_commerenceMVC.DataAccess.Data;
 using Ecommerence.DataAccess.Repository.IRepository;
 using Ecommerence.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Ecommerence.DataAccess.Repository
 {
@@ -22,6 +23,10 @@ namespace Ecommerence.DataAccess.Repository
         void IProductRepository.ProductGuncelle(Product obj)
         {
             _db.Update(obj);
+        }
+        public IEnumerable<Product> ButunVerileriGetir()
+        {
+            return _db.Products.Include(u => u.Category); // Products tablosunu Category ile birleştirerek tüm verileri getirir.
         }
     }
 }

@@ -10,3 +10,4 @@ C:\Users\umut5\e-commerenceMVC\Ecommerence.Models\obj\Debug\net8.0\Ecommerence.M
 C:\Users\umut5\e-commerenceMVC\Ecommerence.Models\obj\Debug\net8.0\refint\Ecommerence.Models.dll
 C:\Users\umut5\e-commerenceMVC\Ecommerence.Models\obj\Debug\net8.0\Ecommerence.Models.pdb
 C:\Users\umut5\e-commerenceMVC\Ecommerence.Models\obj\Debug\net8.0\ref\Ecommerence.Models.dll
+C:\Users\umut5\e-commerenceMVC\Ecommerence.Models\obj\Debug\net8.0\Ecommerence.Models.csproj.AssemblyReference.cache
