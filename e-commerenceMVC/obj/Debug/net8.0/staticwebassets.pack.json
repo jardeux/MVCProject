@@ -13,6 +13,34 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\6abacd26-208f-40d5-9839-b698a7494a76.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\6abacd26-208f-40d5-9839-b698a7494a76.jpg"
+    },
+    {
+      "Id": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\8df08dd3-b07e-41a9-821e-618df8459a36.png",
+      "PackagePath": "staticwebassets\\images\\products\\8df08dd3-b07e-41a9-821e-618df8459a36.png"
+    },
+    {
+      "Id": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\a0351db1-8400-4eaa-b8e6-e0af33706a00.png",
+      "PackagePath": "staticwebassets\\images\\products\\a0351db1-8400-4eaa-b8e6-e0af33706a00.png"
+    },
+    {
+      "Id": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\b56ff147-2ccf-46ba-b3e6-6fe4feb2ca33.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\b56ff147-2ccf-46ba-b3e6-6fe4feb2ca33.jpg"
+    },
+    {
+      "Id": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\b8238190-570f-452a-8d78-1a9c6d86a20f.png",
+      "PackagePath": "staticwebassets\\images\\products\\b8238190-570f-452a-8d78-1a9c6d86a20f.png"
+    },
+    {
+      "Id": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\c72335af-de34-4858-841a-e17350b108f5.png",
+      "PackagePath": "staticwebassets\\images\\products\\c72335af-de34-4858-841a-e17350b108f5.png"
+    },
+    {
+      "Id": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\js\\product.js",
+      "PackagePath": "staticwebassets\\js\\product.js"
+    },
+    {
       "Id": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
