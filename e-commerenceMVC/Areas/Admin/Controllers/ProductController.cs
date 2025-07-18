@@ -68,7 +68,7 @@ namespace e_commerenceMVC.Areas.Admin.Controllers
                 {
                     string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName); // Benzersiz bir dosya adı oluşturur.
                     var uploads = Path.Combine(wwwRootPath, @"images\products"); // Ürün resimlerinin yükleneceği klasör.
-                    if(!string.IsNullOrEmpty(obj.Product.ImageUrl)) // Eğer mevcut bir resim URL'si varsa, eski resmi siler.
+                    if(obj.Product.ProductId != 0) // Eğer mevcut bir resim URL'si varsa, eski resmi siler.
                     {
                         var oldImagePath = Path.Combine(wwwRootPath, obj.Product.ImageUrl.TrimStart('\\'));
                         if (System.IO.File.Exists(oldImagePath))
@@ -87,22 +87,21 @@ namespace e_commerenceMVC.Areas.Admin.Controllers
                 if(obj.Product.ProductId == 0) // Eğer yeni bir ürün ekleniyorsa
                 {
                     _unitOfWork.product.Add(obj.Product); // Ürünü veritabanına ekler.
+                    _unitOfWork.save();
                     TempData["success"] = "Ürün başarıyla eklendi."; // Başarılı mesajı saklanır.
+                    return RedirectToAction("Index");
                 }
                 else // Eğer mevcut bir ürün güncelleniyorsa
                 {
                     _unitOfWork.product.ProductGuncelle(obj.Product); // Ürünü günceller.
+                    _unitOfWork.save();
                     TempData["success"] = "Ürün başarıyla güncellendi."; // Güncelleme başarılı mesajı saklanır.
-                }
+                    return RedirectToAction("Index");
+                }         
             } 
-            if (ModelState.IsValid)
-            {
-
-                TempData["success"] = "Ürün başarıyla eklendi.";
-                _unitOfWork.save();
-                return RedirectToAction("Index");
-            }
             return View(obj);
+                
+                
         }   
         
 
@@ -110,7 +109,7 @@ namespace e_commerenceMVC.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            List<Product> productList = _unitOfWork.product.ButunVerileriGetir().ToList(); // Tüm ürünleri alır.
+            List<Product> productList = _unitOfWork.product.ButunVerileriGetir(includeProperties: "Category").ToList(); // Tüm ürünleri alır.
             return Json(new { data = productList }); // Ürün listesini JSON formatında döner.
         }
 
@@ -122,7 +121,7 @@ namespace e_commerenceMVC.Areas.Admin.Controllers
             {
                 return Json(new { success = false, message = "Ürün bulunamadı." }); // Ürün bulunamazsa hata mesajı döner.
             }
-            var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, DeletedId.ImageUrl.TrimStart('\\'));
+            var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, DeletedId.ImageUrl.TrimStart('\\', '/'));
             if (System.IO.File.Exists(oldImagePath))
             {
                 System.IO.File.Delete(oldImagePath); // Eski resmi siler.

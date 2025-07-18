@@ -1,0 +1,426 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\umut5\\e-commerenceMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|c:\\users\\umut5\\e-commerencemvc\\e-commerencemvc\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|solutionrelative:e-commerencemvc\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|c:\\users\\umut5\\e-commerencemvc\\e-commerencemvc\\wwwroot\\js\\category.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|solutionrelative:e-commerencemvc\\wwwroot\\js\\category.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|c:\\users\\umut5\\e-commerencemvc\\e-commerencemvc\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|solutionrelative:e-commerencemvc\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|c:\\users\\umut5\\e-commerencemvc\\e-commerencemvc\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|solutionrelative:e-commerencemvc\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|c:\\users\\umut5\\e-commerencemvc\\e-commerencemvc\\areas\\admin\\views\\product\\upsert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|solutionrelative:e-commerencemvc\\areas\\admin\\views\\product\\upsert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|c:\\users\\umut5\\e-commerencemvc\\e-commerencemvc\\wwwroot\\js\\product.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|solutionrelative:e-commerencemvc\\wwwroot\\js\\product.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|c:\\users\\umut5\\e-commerencemvc\\e-commerencemvc\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|solutionrelative:e-commerencemvc\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|c:\\users\\umut5\\e-commerencemvc\\e-commerencemvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|solutionrelative:e-commerencemvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|c:\\users\\umut5\\e-commerencemvc\\e-commerencemvc\\areas\\admin\\views\\category\\upsert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|solutionrelative:e-commerencemvc\\areas\\admin\\views\\category\\upsert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC9E082B-B18A-4B0C-93A1-77B2BA4CA78C}|Ecommerence.DataAccess\\Ecommerence.DataAccess.csproj|c:\\users\\umut5\\e-commerencemvc\\ecommerence.dataaccess\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC9E082B-B18A-4B0C-93A1-77B2BA4CA78C}|Ecommerence.DataAccess\\Ecommerence.DataAccess.csproj|solutionrelative:ecommerence.dataaccess\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC9E082B-B18A-4B0C-93A1-77B2BA4CA78C}|Ecommerence.DataAccess\\Ecommerence.DataAccess.csproj|c:\\users\\umut5\\e-commerencemvc\\ecommerence.dataaccess\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC9E082B-B18A-4B0C-93A1-77B2BA4CA78C}|Ecommerence.DataAccess\\Ecommerence.DataAccess.csproj|solutionrelative:ecommerence.dataaccess\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|c:\\users\\umut5\\e-commerencemvc\\e-commerencemvc\\areas\\customer\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|solutionrelative:e-commerencemvc\\areas\\customer\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|c:\\users\\umut5\\e-commerencemvc\\e-commerencemvc\\areas\\customer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|solutionrelative:e-commerencemvc\\areas\\customer\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|c:\\users\\umut5\\e-commerencemvc\\e-commerencemvc\\areas\\customer\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26531E2E-FE24-4873-9AEB-D3ADFC258060}|e-commerenceMVC\\e-commerenceMVC.csproj|solutionrelative:e-commerencemvc\\areas\\customer\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982B1F26-E4B9-4C95-916A-CFA8BCEDEC4B}|Ecommerence.Models\\Ecommerence.Models.csproj|c:\\users\\umut5\\e-commerencemvc\\ecommerence.models\\viewmodel\\productvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982B1F26-E4B9-4C95-916A-CFA8BCEDEC4B}|Ecommerence.Models\\Ecommerence.Models.csproj|solutionrelative:ecommerence.models\\viewmodel\\productvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982B1F26-E4B9-4C95-916A-CFA8BCEDEC4B}|Ecommerence.Models\\Ecommerence.Models.csproj|c:\\users\\umut5\\e-commerencemvc\\ecommerence.models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982B1F26-E4B9-4C95-916A-CFA8BCEDEC4B}|Ecommerence.Models\\Ecommerence.Models.csproj|solutionrelative:ecommerence.models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982B1F26-E4B9-4C95-916A-CFA8BCEDEC4B}|Ecommerence.Models\\Ecommerence.Models.csproj|c:\\users\\umut5\\e-commerencemvc\\ecommerence.models\\ecommerence.models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{982B1F26-E4B9-4C95-916A-CFA8BCEDEC4B}|Ecommerence.Models\\Ecommerence.Models.csproj|solutionrelative:ecommerence.models\\ecommerence.models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC9E082B-B18A-4B0C-93A1-77B2BA4CA78C}|Ecommerence.DataAccess\\Ecommerence.DataAccess.csproj|c:\\users\\umut5\\e-commerencemvc\\ecommerence.dataaccess\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC9E082B-B18A-4B0C-93A1-77B2BA4CA78C}|Ecommerence.DataAccess\\Ecommerence.DataAccess.csproj|solutionrelative:ecommerence.dataaccess\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC9E082B-B18A-4B0C-93A1-77B2BA4CA78C}|Ecommerence.DataAccess\\Ecommerence.DataAccess.csproj|c:\\users\\umut5\\e-commerencemvc\\ecommerence.dataaccess\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC9E082B-B18A-4B0C-93A1-77B2BA4CA78C}|Ecommerence.DataAccess\\Ecommerence.DataAccess.csproj|solutionrelative:ecommerence.dataaccess\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC9E082B-B18A-4B0C-93A1-77B2BA4CA78C}|Ecommerence.DataAccess\\Ecommerence.DataAccess.csproj|c:\\users\\umut5\\e-commerencemvc\\ecommerence.dataaccess\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC9E082B-B18A-4B0C-93A1-77B2BA4CA78C}|Ecommerence.DataAccess\\Ecommerence.DataAccess.csproj|solutionrelative:ecommerence.dataaccess\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC9E082B-B18A-4B0C-93A1-77B2BA4CA78C}|Ecommerence.DataAccess\\Ecommerence.DataAccess.csproj|c:\\users\\umut5\\e-commerencemvc\\ecommerence.dataaccess\\repository\\irepository\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC9E082B-B18A-4B0C-93A1-77B2BA4CA78C}|Ecommerence.DataAccess\\Ecommerence.DataAccess.csproj|solutionrelative:ecommerence.dataaccess\\repository\\irepository\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC9E082B-B18A-4B0C-93A1-77B2BA4CA78C}|Ecommerence.DataAccess\\Ecommerence.DataAccess.csproj|c:\\users\\umut5\\e-commerencemvc\\ecommerence.dataaccess\\repository\\irepository\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC9E082B-B18A-4B0C-93A1-77B2BA4CA78C}|Ecommerence.DataAccess\\Ecommerence.DataAccess.csproj|solutionrelative:ecommerence.dataaccess\\repository\\irepository\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC9E082B-B18A-4B0C-93A1-77B2BA4CA78C}|Ecommerence.DataAccess\\Ecommerence.DataAccess.csproj|c:\\users\\umut5\\e-commerencemvc\\ecommerence.dataaccess\\repository\\irepository\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC9E082B-B18A-4B0C-93A1-77B2BA4CA78C}|Ecommerence.DataAccess\\Ecommerence.DataAccess.csproj|solutionrelative:ecommerence.dataaccess\\repository\\irepository\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC9E082B-B18A-4B0C-93A1-77B2BA4CA78C}|Ecommerence.DataAccess\\Ecommerence.DataAccess.csproj|c:\\users\\umut5\\e-commerencemvc\\ecommerence.dataaccess\\repository\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC9E082B-B18A-4B0C-93A1-77B2BA4CA78C}|Ecommerence.DataAccess\\Ecommerence.DataAccess.csproj|solutionrelative:ecommerence.dataaccess\\repository\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "e-commerenceMVC\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "e-commerenceMVC\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-18T20:49:22.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.DataAccess\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Ecommerence.DataAccess\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.DataAccess\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Ecommerence.DataAccess\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T20:00:31.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Upsert.cshtml",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\Areas\\Admin\\Views\\Product\\Upsert.cshtml",
+              "RelativeDocumentMoniker": "e-commerenceMVC\\Areas\\Admin\\Views\\Product\\Upsert.cshtml",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\Areas\\Admin\\Views\\Product\\Upsert.cshtml",
+              "RelativeToolTip": "e-commerenceMVC\\Areas\\Admin\\Views\\Product\\Upsert.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAE4AAACKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-18T21:30:23.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "product.js",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\js\\product.js",
+              "RelativeDocumentMoniker": "e-commerenceMVC\\wwwroot\\js\\product.js",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\js\\product.js",
+              "RelativeToolTip": "e-commerenceMVC\\wwwroot\\js\\product.js",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwDIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-18T20:49:39.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "e-commerenceMVC\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "e-commerenceMVC\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAAHMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T20:19:38.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "e-commerenceMVC\\Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "e-commerenceMVC\\Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-18T21:32:25.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "e-commerenceMVC\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "e-commerenceMVC\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwC8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T20:19:18.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "category.js",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\js\\category.js",
+              "RelativeDocumentMoniker": "e-commerenceMVC\\wwwroot\\js\\category.js",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\js\\category.js",
+              "RelativeToolTip": "e-commerenceMVC\\wwwroot\\js\\category.js",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-18T21:50:53.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\Program.cs",
+              "RelativeDocumentMoniker": "e-commerenceMVC\\Program.cs",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\Program.cs",
+              "RelativeToolTip": "e-commerenceMVC\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T20:45:22.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Upsert.cshtml",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\Areas\\Admin\\Views\\Category\\Upsert.cshtml",
+              "RelativeDocumentMoniker": "e-commerenceMVC\\Areas\\Admin\\Views\\Category\\Upsert.cshtml",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\Areas\\Admin\\Views\\Category\\Upsert.cshtml",
+              "RelativeToolTip": "e-commerenceMVC\\Areas\\Admin\\Views\\Category\\Upsert.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-18T21:30:08.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.DataAccess\\Repository\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Ecommerence.DataAccess\\Repository\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.DataAccess\\Repository\\UnitOfWork.cs",
+              "RelativeToolTip": "Ecommerence.DataAccess\\Repository\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T20:01:52.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "e-commerenceMVC\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "e-commerenceMVC\\Areas\\Customer\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T21:17:35.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\Areas\\Customer\\Views\\Home\\Details.cshtml",
+              "RelativeDocumentMoniker": "e-commerenceMVC\\Areas\\Customer\\Views\\Home\\Details.cshtml",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\Areas\\Customer\\Views\\Home\\Details.cshtml",
+              "RelativeToolTip": "e-commerenceMVC\\Areas\\Customer\\Views\\Home\\Details.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEIAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-18T21:17:44.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\Areas\\Customer\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "e-commerenceMVC\\Areas\\Customer\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\Areas\\Customer\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "e-commerenceMVC\\Areas\\Customer\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAnwBAAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-18T21:17:52.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductVM.cs",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.Models\\ViewModel\\ProductVM.cs",
+              "RelativeDocumentMoniker": "Ecommerence.Models\\ViewModel\\ProductVM.cs",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.Models\\ViewModel\\ProductVM.cs",
+              "RelativeToolTip": "Ecommerence.Models\\ViewModel\\ProductVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T20:19:07.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.Models\\Category.cs",
+              "RelativeDocumentMoniker": "Ecommerence.Models\\Category.cs",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.Models\\Category.cs",
+              "RelativeToolTip": "Ecommerence.Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T20:19:06.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Ecommerence.Models.csproj",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.Models\\Ecommerence.Models.csproj",
+              "RelativeDocumentMoniker": "Ecommerence.Models\\Ecommerence.Models.csproj",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.Models\\Ecommerence.Models.csproj",
+              "RelativeToolTip": "Ecommerence.Models\\Ecommerence.Models.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-18T20:01:52.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.DataAccess\\Repository\\Repository.cs",
+              "RelativeDocumentMoniker": "Ecommerence.DataAccess\\Repository\\Repository.cs",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.DataAccess\\Repository\\Repository.cs",
+              "RelativeToolTip": "Ecommerence.DataAccess\\Repository\\Repository.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowEEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T20:01:44.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.DataAccess\\Repository\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Ecommerence.DataAccess\\Repository\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.DataAccess\\Repository\\ProductRepository.cs",
+              "RelativeToolTip": "Ecommerence.DataAccess\\Repository\\ProductRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T20:01:38.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.DataAccess\\Repository\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "Ecommerence.DataAccess\\Repository\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.DataAccess\\Repository\\CategoryRepository.cs",
+              "RelativeToolTip": "Ecommerence.DataAccess\\Repository\\CategoryRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T20:01:30.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Ecommerence.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "RelativeToolTip": "Ecommerence.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T20:01:23.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.DataAccess\\Repository\\IRepository\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "Ecommerence.DataAccess\\Repository\\IRepository\\ICategoryRepository.cs",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.DataAccess\\Repository\\IRepository\\ICategoryRepository.cs",
+              "RelativeToolTip": "Ecommerence.DataAccess\\Repository\\IRepository\\ICategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T20:01:15.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.DataAccess\\Repository\\IRepository\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "Ecommerence.DataAccess\\Repository\\IRepository\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.DataAccess\\Repository\\IRepository\\IProductRepository.cs",
+              "RelativeToolTip": "Ecommerence.DataAccess\\Repository\\IRepository\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T20:01:09.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.DataAccess\\Repository\\IRepository\\IRepository.cs",
+              "RelativeDocumentMoniker": "Ecommerence.DataAccess\\Repository\\IRepository\\IRepository.cs",
+              "ToolTip": "C:\\Users\\umut5\\e-commerenceMVC\\Ecommerence.DataAccess\\Repository\\IRepository\\IRepository.cs",
+              "RelativeToolTip": "Ecommerence.DataAccess\\Repository\\IRepository\\IRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T20:00:51.413Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

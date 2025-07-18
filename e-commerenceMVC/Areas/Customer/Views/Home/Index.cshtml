@@ -17,7 +17,7 @@
                                 <p class="text-dark text-opacity-75 text-center"><span>@i.Price.ToString("c")</span></p>
                             </div>
                         </div>
-                        <a href ="/customer/home/details/@i.ProductId" class="btn btn-primary bg-gradient border-0 form-control">
+                        <a asp-action="Details" asp-route-id ="@i.ProductId" class="btn btn-primary bg-gradient border-0 form-control">
                             Details
                         </a>
                     </div>
