@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EcommerenceRazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf53396a96c78e47411fbdad930fa85ee390b01c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4941dc06475d0d4303f8ee42aa8a020225be155")]
 [assembly: System.Reflection.AssemblyProductAttribute("EcommerenceRazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EcommerenceRazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

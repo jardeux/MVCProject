@@ -1,8 +1,30 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@using Ecommerence.Models
+@model IEnumerable<Product>
+<div class="row pb-3">
+	@foreach(var i in Model)
+	{
+        <div class="col-lg-3 col-sm-6 h-100">
+            <div class="row p-2 h-100">
+                <div class="col-12 p-1 h-100">
+                    <div class="card h-100 border-0 p-3 shadow border-top border-5 rounded">
+                        <img src="@i.ImageUrl" class="card-img-top rounded" style="height: 250px; object-fit: cover;" />
+                        <div class="card-body pb-0 d-flex flex-column justify-content-between">
+                            <div class="pl-1">
+                                <p class="card-title h5 text-dark opacity-75 text-uppercase text-center">@i.Title</p>
+                                <p class="card-title text-warning text-center"><b>@i.Author</b></p>
+                            </div>
+                            <div class="pl-1">
+                                <p class="text-dark text-opacity-75 text-center"><span>@i.Price.ToString("c")</span></p>
+                            </div>
+                        </div>
+                        <a href ="/customer/home/details/@i.ProductId" class="btn btn-primary bg-gradient border-0 form-control">
+                            Details
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+	}
 </div>

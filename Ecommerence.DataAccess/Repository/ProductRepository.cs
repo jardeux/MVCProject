@@ -24,9 +24,6 @@ namespace Ecommerence.DataAccess.Repository
         {
             _db.Update(obj);
         }
-        public IEnumerable<Product> ButunVerileriGetir()
-        {
-            return _db.Products.Include(u => u.Category); // Products tablosunu Category ile birleştirerek tüm verileri getirir.
-        }
+       
     }
 }

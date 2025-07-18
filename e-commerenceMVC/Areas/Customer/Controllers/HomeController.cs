@@ -1,5 +1,7 @@
 using System.Diagnostics;
 using e_commerenceMVC.Models;
+using Ecommerence.DataAccess.Repository.IRepository;
+using Ecommerence.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace e_commerenceMVC.Areas.Customer.Controllers
@@ -8,17 +10,26 @@ namespace e_commerenceMVC.Areas.Customer.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private IUnitOfWork _unitOfWork;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IUnitOfWork unitOfWork)
         {
             _logger = logger;
+            _unitOfWork = unitOfWork;
         }
 
         public IActionResult Index()
         {
-            return View();
+            IEnumerable<Product> productList = _unitOfWork.product.ButunVerileriGetir(includeProperties: "Category");
+            return View(productList);
         }
 
+        public IActionResult Details(int id)
+        {
+            Product product = _unitOfWork.product.Get(i => i.ProductId == id, includeProperties: "Category");
+            return View(product);
+
+        }
         public IActionResult Privacy()
         {
             return View();

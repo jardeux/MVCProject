@@ -26,7 +26,7 @@ namespace e_commerenceMVC.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            List<Product> products = _unitOfWork.product.ButunVerileriGetir().ToList();       
+            List<Product> products = _unitOfWork.product.ButunVerileriGetir(includeProperties: "Category").ToList();       
             
 
             return View(products);
