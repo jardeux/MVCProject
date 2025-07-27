@@ -4,12 +4,15 @@ using Ecommerence.DataAccess.Repository;
 using Ecommerence.DataAccess.Repository.IRepository;
 using Ecommerence.Models;
 using Ecommerence.Models.ViewModel;
+using Ecommerence.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 
 namespace e_commerenceMVC.Areas.Admin.Controllers
 {
     [Area("Admin")] // Bu controller'ın Admin alanında olduğunu belirtir.
+    [Authorize(Roles = SD.Role_User_Admin)] // Bu controller'a erişim için Admin rolüne sahip olma şartı aranır.
     public class CategoryController : Controller
     {
         //readonly sadece cotr'da atanmak için kullanılır.

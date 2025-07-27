@@ -1,9 +1,3 @@
-C:\Users\umut5\e-commerenceMVC\Ecommerence.DataAccess\obj\Debug\net8.0\Ecommerence.DataAccess.csproj.AssemblyReference.cache
-C:\Users\umut5\e-commerenceMVC\Ecommerence.DataAccess\obj\Debug\net8.0\Ecommerence.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\umut5\e-commerenceMVC\Ecommerence.DataAccess\obj\Debug\net8.0\Ecommerence.DataAccess.AssemblyInfoInputs.cache
-C:\Users\umut5\e-commerenceMVC\Ecommerence.DataAccess\obj\Debug\net8.0\Ecommerence.DataAccess.AssemblyInfo.cs
-C:\Users\umut5\e-commerenceMVC\Ecommerence.DataAccess\obj\Debug\net8.0\Ecommerence.DataAccess.csproj.CoreCompileInputs.cache
-C:\Users\umut5\e-commerenceMVC\Ecommerence.DataAccess\obj\Debug\net8.0\Ecommerence.DataAccess.sourcelink.json
 C:\Users\umut5\e-commerenceMVC\Ecommerence.DataAccess\bin\Debug\net8.0\Ecommerence.DataAccess.deps.json
 C:\Users\umut5\e-commerenceMVC\Ecommerence.DataAccess\bin\Debug\net8.0\Ecommerence.DataAccess.runtimeconfig.json
 C:\Users\umut5\e-commerenceMVC\Ecommerence.DataAccess\bin\Debug\net8.0\Ecommerence.DataAccess.dll
@@ -12,6 +6,12 @@ C:\Users\umut5\e-commerenceMVC\Ecommerence.DataAccess\bin\Debug\net8.0\Ecommeren
 C:\Users\umut5\e-commerenceMVC\Ecommerence.DataAccess\bin\Debug\net8.0\Ecommerence.Utility.dll
 C:\Users\umut5\e-commerenceMVC\Ecommerence.DataAccess\bin\Debug\net8.0\Ecommerence.Models.pdb
 C:\Users\umut5\e-commerenceMVC\Ecommerence.DataAccess\bin\Debug\net8.0\Ecommerence.Utility.pdb
+C:\Users\umut5\e-commerenceMVC\Ecommerence.DataAccess\obj\Debug\net8.0\Ecommerence.DataAccess.csproj.AssemblyReference.cache
+C:\Users\umut5\e-commerenceMVC\Ecommerence.DataAccess\obj\Debug\net8.0\Ecommerence.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\umut5\e-commerenceMVC\Ecommerence.DataAccess\obj\Debug\net8.0\Ecommerence.DataAccess.AssemblyInfoInputs.cache
+C:\Users\umut5\e-commerenceMVC\Ecommerence.DataAccess\obj\Debug\net8.0\Ecommerence.DataAccess.AssemblyInfo.cs
+C:\Users\umut5\e-commerenceMVC\Ecommerence.DataAccess\obj\Debug\net8.0\Ecommerence.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\umut5\e-commerenceMVC\Ecommerence.DataAccess\obj\Debug\net8.0\Ecommerence.DataAccess.sourcelink.json
 C:\Users\umut5\e-commerenceMVC\Ecommerence.DataAccess\obj\Debug\net8.0\Ecommere.FF779575.Up2Date
 C:\Users\umut5\e-commerenceMVC\Ecommerence.DataAccess\obj\Debug\net8.0\Ecommerence.DataAccess.dll
 C:\Users\umut5\e-commerenceMVC\Ecommerence.DataAccess\obj\Debug\net8.0\refint\Ecommerence.DataAccess.dll

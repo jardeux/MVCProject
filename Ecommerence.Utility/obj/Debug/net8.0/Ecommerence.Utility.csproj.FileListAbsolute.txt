@@ -1,6 +1,7 @@
 C:\Users\umut5\e-commerenceMVC\Ecommerence.Utility\bin\Debug\net8.0\Ecommerence.Utility.deps.json
 C:\Users\umut5\e-commerenceMVC\Ecommerence.Utility\bin\Debug\net8.0\Ecommerence.Utility.dll
 C:\Users\umut5\e-commerenceMVC\Ecommerence.Utility\bin\Debug\net8.0\Ecommerence.Utility.pdb
+C:\Users\umut5\e-commerenceMVC\Ecommerence.Utility\obj\Debug\net8.0\Ecommerence.Utility.csproj.AssemblyReference.cache
 C:\Users\umut5\e-commerenceMVC\Ecommerence.Utility\obj\Debug\net8.0\Ecommerence.Utility.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\umut5\e-commerenceMVC\Ecommerence.Utility\obj\Debug\net8.0\Ecommerence.Utility.AssemblyInfoInputs.cache
 C:\Users\umut5\e-commerenceMVC\Ecommerence.Utility\obj\Debug\net8.0\Ecommerence.Utility.AssemblyInfo.cs

@@ -10,6 +10,11 @@ namespace Ecommerence.DataAccess.Repository.IRepository
     {
         ICategoryRepository category { get; }
         IProductRepository product { get; }
+        ICompanyRepository company { get; }
+        IShoppingCartRepository shoppingCart { get; }
+        IOrderHeaderRepository orderHeader { get; }
+        IOrderDetailRepository orderDetail { get; }
+        IApplicationUserRepository applicationUser { get; }
         void save(); // Değişiklikleri kaydetmek için bir metod tanımlanır.
 
 

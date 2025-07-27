@@ -26,10 +26,16 @@ namespace Ecommerence.DataAccess.Repository
             dbSet.Add(entity);
         }
 
-        public IEnumerable<T> ButunVerileriGetir(string? includeProperties=null)
+        public IEnumerable<T> ButunVerileriGetir(Expression<Func<T, bool>>? filter, string? includeProperties=null)
         {
             IQueryable<T> query = dbSet;
-            if(!string.IsNullOrEmpty(includeProperties))
+            //IQueryable<T> query = dbSet; bu satır dbSet'i IQueryable<T> tipine çevirir, böylece LINQ sorguları uygulayabiliriz.
+            if (filter != null)
+            {
+                query = query.Where(filter);
+            }
+            // bu satır filter parametresi null değilse, yani bir filtre verilmişse, dbSet üzerinde Where metodunu uygular ve filtrelenmiş verileri alır.
+            if (!string.IsNullOrEmpty(includeProperties))
             {
                 foreach (var includeProperty in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                 {
@@ -39,20 +45,34 @@ namespace Ecommerence.DataAccess.Repository
             return query.ToList(); // IQueryable<T> döndürür, bu yüzden ToList() ile listeye çeviriyoruz.
         }
 
-        public T Get(Expression<Func<T, bool>> filter, string? includeProperties = null)
+        public T Get(Expression<Func<T, bool>> filter, string? includeProperties = null, bool tracked = false)
         {
-            IQueryable<T> query = dbSet;
+            IQueryable<T> query;
+            if (tracked)
+            {
+                query = dbSet;
+
+            }
+            else
+            {
+                query = dbSet.AsNoTracking();
+            }
+
             query = query.Where(filter);
             if (!string.IsNullOrEmpty(includeProperties))
             {
-                foreach (var includeProperty in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                foreach (var includeProp in includeProperties
+                    .Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                 {
-                    query = query.Include(includeProperty);
+                    query = query.Include(includeProp);
                 }
             }
             return query.FirstOrDefault();
 
+
         }
+
+        
 
         public void Remove(T entity)
         {
@@ -62,6 +82,11 @@ namespace Ecommerence.DataAccess.Repository
         public void RemoveRange(IEnumerable<T> entity)
         {
             dbSet.RemoveRange(entity);
+        }
+
+        public void Update(T entity)
+        {
+            dbSet.Update(entity);
         }
     }
 }

@@ -1,7 +1,10 @@
 using System.Diagnostics;
+using System.Security.Claims;
 using e_commerenceMVC.Models;
 using Ecommerence.DataAccess.Repository.IRepository;
 using Ecommerence.Models;
+using Ecommerence.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace e_commerenceMVC.Areas.Customer.Controllers
@@ -24,11 +27,48 @@ namespace e_commerenceMVC.Areas.Customer.Controllers
             return View(productList);
         }
 
-        public IActionResult Details(int id)
+        public IActionResult Details(int ProductId)
         {
-            Product product = _unitOfWork.product.Get(i => i.ProductId == id, includeProperties: "Category");
-            return View(product);
+            ShoppingCart shoppingCart = new ShoppingCart()
+            {
+                Product = _unitOfWork.product.Get(i => i.ProductId == ProductId, includeProperties: "Category"),
+                Count = 1,
+                ProductId = ProductId
+            };            return View(shoppingCart);
 
+        }
+        [HttpPost]
+        [Authorize]    
+        public IActionResult Details(ShoppingCart shoppingCart)
+        {
+            // IDENTITY kolonu otomatik artsýn
+            var claimsIdentity = (ClaimsIdentity)User.Identity;
+            var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
+            shoppingCart.ApplicationUserId = userId;
+
+            ShoppingCart cartFromDb = _unitOfWork.shoppingCart.Get(u => u.ApplicationUserId == userId &&
+            u.ProductId == shoppingCart.ProductId);
+
+            if (cartFromDb != null)
+            {
+                //shopping cart exists
+                cartFromDb.Count += shoppingCart.Count;
+                _unitOfWork.shoppingCart.Guncelle(cartFromDb);
+                _unitOfWork.save();
+            }
+            else
+            {
+                //add cart record
+                _unitOfWork.shoppingCart.Add(shoppingCart);
+                _unitOfWork.save();
+                
+            }
+            TempData["success"] = "Cart updated successfully";
+
+
+
+
+            return RedirectToAction(nameof(Index));
         }
         public IActionResult Privacy()
         {

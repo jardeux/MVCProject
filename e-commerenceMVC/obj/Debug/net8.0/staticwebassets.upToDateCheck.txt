@@ -1,10 +1,15 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\book.png
+wwwroot\images\lawn_leaf.jpg
 wwwroot\images\products\1451367a-d593-4e31-bfc3-f059af3d523e.jpeg
+wwwroot\images\products\17a31526-233d-40f3-b311-eede6d9ddcc3.jpeg
 wwwroot\images\products\a0b5b55d-4fc9-43a2-a262-d2f6aa99a0e5.jpg
 wwwroot\images\products\dec052d5-f6d3-473e-9713-f3decb26340d.jpeg
 wwwroot\images\products\fc68ec9a-bc4c-4361-b2ab-b319da6db529.jpeg
 wwwroot\js\category.js
+wwwroot\js\company.js
+wwwroot\js\Order.js
 wwwroot\js\product.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
