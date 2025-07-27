@@ -29,19 +29,19 @@ namespace e_commerenceMVC.Areas.Customer.Controllers
 
         public IActionResult Details(int ProductId)
         {
-            ShoppingCart shoppingCart = new ShoppingCart()
+            ShoppingCart cart = new()
             {
-                Product = _unitOfWork.product.Get(i => i.ProductId == ProductId, includeProperties: "Category"),
+                Product = _unitOfWork.product.Get(u => u.ProductId == ProductId, includeProperties: "Category,ProductImages"),
                 Count = 1,
                 ProductId = ProductId
-            };            return View(shoppingCart);
+            };
+            return View(cart);
 
         }
         [HttpPost]
         [Authorize]    
         public IActionResult Details(ShoppingCart shoppingCart)
         {
-            // IDENTITY kolonu otomatik artsýn
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
             shoppingCart.ApplicationUserId = userId;
@@ -53,14 +53,14 @@ namespace e_commerenceMVC.Areas.Customer.Controllers
             {
                 //shopping cart exists
                 cartFromDb.Count += shoppingCart.Count;
-                _unitOfWork.shoppingCart.Guncelle(cartFromDb);
+                _unitOfWork.shoppingCart.Update(cartFromDb);
                 _unitOfWork.save();
             }
             else
             {
                 //add cart record
                 _unitOfWork.shoppingCart.Add(shoppingCart);
-                _unitOfWork.save();
+                _unitOfWork.save();       
                 
             }
             TempData["success"] = "Cart updated successfully";

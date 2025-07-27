@@ -8,8 +8,7 @@ namespace Ecommerence.Models.ViewModel
 {
     public class OrderVM
     {
-        public OrderHeader OrderHeaders { get; set; }
-        public IEnumerable<OrderDetail> OrderDetails { get; set; }
-
+        public OrderHeader OrderHeader { get; set; }
+        public IEnumerable<OrderDetail> OrderDetail { get; set; }
     }
 }

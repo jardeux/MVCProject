@@ -7,8 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace e_commerenceMVC.Areas.Admin.Controllers
 {
-    [Area("Admin")] // Bu controller'ın Admin alanında olduğunu belirtir.
-    [Authorize(Roles = SD.Role_User_Admin)] // Bu controller'a erişim için Admin rolüne sahip olma şartı aranır.
+    [Area("admin")]
 
     public class OrderController : Controller
     {
@@ -33,7 +32,9 @@ namespace e_commerenceMVC.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
+            
             List<OrderHeader> OrderHeaderList = _unitOfWork.orderHeader.ButunVerileriGetir(includeProperties: "ApplicationUser").ToList(); // Tüm sipariş başlıklarını alır.
+            
             return Json(new { data = OrderHeaderList }); // Ürün listesini JSON formatında döner.
         }
 

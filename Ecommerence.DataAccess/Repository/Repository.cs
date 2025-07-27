@@ -15,7 +15,7 @@ namespace Ecommerence.DataAccess.Repository
         
         private readonly ApplicationDbContext _db;
         internal DbSet<T> dbSet;
-        public Repository(ApplicationDbContext db)
+        public Repository(ApplicationDbContext db)  
         {
             _db = db;
             this.dbSet = _db.Set<T>();
@@ -26,23 +26,22 @@ namespace Ecommerence.DataAccess.Repository
             dbSet.Add(entity);
         }
 
-        public IEnumerable<T> ButunVerileriGetir(Expression<Func<T, bool>>? filter, string? includeProperties=null)
+        public IEnumerable<T> ButunVerileriGetir(Expression<Func<T, bool>>? filter=null, string? includeProperties=null)
         {
             IQueryable<T> query = dbSet;
-            //IQueryable<T> query = dbSet; bu satır dbSet'i IQueryable<T> tipine çevirir, böylece LINQ sorguları uygulayabiliriz.
             if (filter != null)
             {
                 query = query.Where(filter);
             }
-            // bu satır filter parametresi null değilse, yani bir filtre verilmişse, dbSet üzerinde Where metodunu uygular ve filtrelenmiş verileri alır.
             if (!string.IsNullOrEmpty(includeProperties))
             {
-                foreach (var includeProperty in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                foreach (var includeProp in includeProperties
+                    .Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                 {
-                    query = query.Include(includeProperty);
+                    query = query.Include(includeProp);
                 }
             }
-            return query.ToList(); // IQueryable<T> döndürür, bu yüzden ToList() ile listeye çeviriyoruz.
+            return query.ToList();
         }
 
         public T Get(Expression<Func<T, bool>> filter, string? includeProperties = null, bool tracked = false)

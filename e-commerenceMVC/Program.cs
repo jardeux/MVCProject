@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using Ecommerence.Utility;
 using Microsoft.AspNetCore.Identity.UI.Services;
+using Ecommerence.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

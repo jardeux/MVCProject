@@ -20,9 +20,10 @@ namespace Ecommerence.Models
         public string? State { get; set; }
         public string? PostalCode { get; set; }
         public int? CompanyId { get; set; }
-        [ValidateNever]
         [ForeignKey("CompanyId")]
+        [ValidateNever]
         public Company? Company { get; set; }
-        
+        [NotMapped]
+        public string Role { get; set; }
     }
 }

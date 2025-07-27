@@ -3,9 +3,10 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using e_commerenceMVC.Models;
 using Ecommerence.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 namespace e_commerenceMVC.DataAccess.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext<IdentityUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)

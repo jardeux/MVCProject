@@ -24,18 +24,22 @@ namespace e_commerenceMVC.Areas.Customer.Controllers
         {
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
+
             shoppingCartVM = new()
             {
-                ShoppingCartList = _unitOfWork.shoppingCart.ButunVerileriGetir(u => u.ApplicationUserId == userId, includeProperties: "Product"),
+                ShoppingCartList = _unitOfWork.shoppingCart.ButunVerileriGetir(u => u.ApplicationUserId == userId,
+                includeProperties: "Product"),
                 OrderHeader = new()
             };
+
             
+
             foreach (var cart in shoppingCartVM.ShoppingCartList)
             {
-                cart.Price = GetPriceBasedQuantity(cart); // Her alışveriş sepeti öğesi için fiyatı belirler.
-                shoppingCartVM.OrderHeader.OrderTotal += (cart.Count * cart.Price); // Toplam sipariş tutarını hesaplar.
-
+                cart.Price = GetPriceBasedQuantity(cart);
+                shoppingCartVM.OrderHeader.OrderTotal += (cart.Price * cart.Count);
             }
+
             return View(shoppingCartVM);
         }
         private double GetPriceBasedQuantity(ShoppingCart shoppingCart)
@@ -95,25 +99,32 @@ namespace e_commerenceMVC.Areas.Customer.Controllers
         {
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
+
             shoppingCartVM = new()
             {
-                ShoppingCartList = _unitOfWork.shoppingCart.ButunVerileriGetir(u => u.ApplicationUserId == userId, includeProperties: "Product"),
+                ShoppingCartList = _unitOfWork.shoppingCart.ButunVerileriGetir(u => u.ApplicationUserId == userId,
+                includeProperties: "Product"),
                 OrderHeader = new()
             };
-            shoppingCartVM.OrderHeader.ApplicationUser = _unitOfWork.applicationUser.Get(u => u.Id == userId); // Kullanıcı bilgilerini alır.
-            shoppingCartVM.OrderHeader.State = shoppingCartVM.OrderHeader.ApplicationUser.State; // Kullanıcının eyalet bilgisini alır.
-            shoppingCartVM.OrderHeader.City = shoppingCartVM.OrderHeader.ApplicationUser.City; // Kullanıcının şehir bilgisini alır.
-            shoppingCartVM.OrderHeader.StreetAddress = shoppingCartVM.OrderHeader.ApplicationUser.StreetAddress; // Kullanıcının adres bilgisini alır.
-            shoppingCartVM.OrderHeader.PostalCode = shoppingCartVM.OrderHeader.ApplicationUser.PostalCode; // Kullanıcının posta kodunu alır.
-            shoppingCartVM.OrderHeader.PhoneNumber = shoppingCartVM.OrderHeader.ApplicationUser.PhoneNumber; // Kullanıcının telefon numarasını alır.
+
+            shoppingCartVM.OrderHeader.ApplicationUser = _unitOfWork.applicationUser.Get(u => u.Id == userId);
+
+            shoppingCartVM.OrderHeader.Name = shoppingCartVM.OrderHeader.ApplicationUser.Name;
+            shoppingCartVM.OrderHeader.PhoneNumber = shoppingCartVM.OrderHeader.ApplicationUser.PhoneNumber;
+            shoppingCartVM.OrderHeader.StreetAddress = shoppingCartVM.OrderHeader.ApplicationUser.StreetAddress;
+            shoppingCartVM.OrderHeader.City = shoppingCartVM.OrderHeader.ApplicationUser.City;
+            shoppingCartVM.OrderHeader.State = shoppingCartVM.OrderHeader.ApplicationUser.State;
+            shoppingCartVM.OrderHeader.PostalCode = shoppingCartVM.OrderHeader.ApplicationUser.PostalCode;
+            
+
+
+
             foreach (var cart in shoppingCartVM.ShoppingCartList)
             {
                 cart.Price = GetPriceBasedQuantity(cart);
                 shoppingCartVM.OrderHeader.OrderTotal += (cart.Price * cart.Count);
             }
-           
-            return View(shoppingCartVM); // Alışveriş sepeti ve sipariş başlığı bilgilerini içeren ShoppingCartVM modelini görüntüler.
-
+            return View(shoppingCartVM);
 
         }
         [ActionName("Summary")] // Bu metot, "Summary" adında bir HTTP GET isteği ile çağrılır.
@@ -188,15 +199,6 @@ namespace e_commerenceMVC.Areas.Customer.Controllers
 
 
 
-        #region API CALLS
-        [HttpGet]
-        public IActionResult GetAll()
-        {
-            List<ShoppingCart> ShoppingCartList = _unitOfWork.shoppingCart.ButunVerileriGetir(includeProperties: "Product").ToList(); // Tüm ürünleri alır.
-            return Json(new { data = ShoppingCartList }); // Ürün listesini JSON formatında döner.
-        }
-        
-        #endregion
 
     }
 }

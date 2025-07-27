@@ -12,6 +12,15 @@ namespace Ecommerence.DataAccess.Repository
     public class UnitOfWork : IUnitOfWork
     {
         private ApplicationDbContext _db;
+        public ICategoryRepository category { get; private set; }
+
+        public IProductRepository product { get; private set; }
+
+        public ICompanyRepository company { get; private set; }
+        public IShoppingCartRepository shoppingCart { get; private set; }
+        public IOrderDetailRepository orderDetail { get; private set; }
+        public IOrderHeaderRepository orderHeader { get; private set; }
+        public IApplicationUserRepository applicationUser { get; private set; }
         public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
@@ -24,15 +33,7 @@ namespace Ecommerence.DataAccess.Repository
             applicationUser = new ApplicationUserRepository(_db);
 
         }
-        public ICategoryRepository category { get; private set; }
-
-        public IProductRepository product { get; private set; }
-
-        public ICompanyRepository company { get; private set; }
-        public IShoppingCartRepository shoppingCart { get; private set; }
-        public IOrderDetailRepository orderDetail { get; private set; }
-        public IOrderHeaderRepository orderHeader { get; private set; }
-        public IApplicationUserRepository applicationUser { get; private set; }
+        
 
         public void save()
         {

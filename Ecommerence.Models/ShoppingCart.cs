@@ -22,6 +22,7 @@ namespace Ecommerence.Models
         [ForeignKey("ApplicationUserId")]
         [ValidateNever]
         public ApplicationUser ApplicationUser { get; set; }
+        
         [NotMapped]
         public double Price { get; set; } // Sepetteki ürünün fiyatını tutar, bu alan veritabanında saklanmaz.
     }
