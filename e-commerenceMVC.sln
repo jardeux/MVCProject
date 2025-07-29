@@ -5,8 +5,6 @@ VisualStudioVersion = 17.13.35913.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "e-commerenceMVC", "e-commerenceMVC\e-commerenceMVC.csproj", "{26531E2E-FE24-4873-9AEB-D3ADFC258060}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcommerenceRazor", "EcommerenceRazor\EcommerenceRazor.csproj", "{D2287A6A-04AD-4935-99BB-8AFF0F901500}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerence.DataAccess", "Ecommerence.DataAccess\Ecommerence.DataAccess.csproj", "{AC9E082B-B18A-4B0C-93A1-77B2BA4CA78C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerence.Models", "Ecommerence.Models\Ecommerence.Models.csproj", "{982B1F26-E4B9-4C95-916A-CFA8BCEDEC4B}"
@@ -23,10 +21,6 @@ Global
 		{26531E2E-FE24-4873-9AEB-D3ADFC258060}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26531E2E-FE24-4873-9AEB-D3ADFC258060}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26531E2E-FE24-4873-9AEB-D3ADFC258060}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D2287A6A-04AD-4935-99BB-8AFF0F901500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D2287A6A-04AD-4935-99BB-8AFF0F901500}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D2287A6A-04AD-4935-99BB-8AFF0F901500}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D2287A6A-04AD-4935-99BB-8AFF0F901500}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AC9E082B-B18A-4B0C-93A1-77B2BA4CA78C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AC9E082B-B18A-4B0C-93A1-77B2BA4CA78C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC9E082B-B18A-4B0C-93A1-77B2BA4CA78C}.Release|Any CPU.ActiveCfg = Release|Any CPU

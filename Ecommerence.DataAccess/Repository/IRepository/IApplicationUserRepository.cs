@@ -10,7 +10,7 @@ namespace Ecommerence.DataAccess.Repository.IRepository
     public interface IApplicationUserRepository : IRepository<ApplicationUser>
     {
         public void UserGuncelle(ApplicationUser obj); // ApplicationUser güncelleme işlemi için bir metod tanımlanır.
-
+        public ApplicationUser GetById(string id); // ApplicationUser'ı Id'sine göre getirmek için bir metod tanımlanır.
 
 
     }

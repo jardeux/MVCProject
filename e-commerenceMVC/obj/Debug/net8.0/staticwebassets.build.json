@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PBz0cRkYnREuUgw8dD5oA2wW+w8vuJDC9yOms4XjPUU=",
+  "Hash": "5227xqcSRletNBR7zXV3pmIj89RBjZm0zwx46mqK5zw=",
   "Source": "e-commerenceMVC",
   "BasePath": "_content/e-commerenceMVC",
   "Mode": "Default",
@@ -1403,6 +1403,27 @@
       "OriginalItemSpec": "wwwroot\\images\\lawn_leaf.jpg"
     },
     {
+      "Identity": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\0354947b-c03f-482b-813e-3d983af33cf1.jpg",
+      "SourceId": "e-commerenceMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\",
+      "BasePath": "_content/e-commerenceMVC",
+      "RelativePath": "images/products/0354947b-c03f-482b-813e-3d983af33cf1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ipbm11booh",
+      "Integrity": "OibUbSGkSMeUtumvfnh/DZA4UNQ989ooGjjy+UeQRwc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\0354947b-c03f-482b-813e-3d983af33cf1.jpg"
+    },
+    {
       "Identity": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\1451367a-d593-4e31-bfc3-f059af3d523e.jpeg",
       "SourceId": "e-commerenceMVC",
       "SourceType": "Discovered",
@@ -1443,6 +1464,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\17a31526-233d-40f3-b311-eede6d9ddcc3.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\24a14d63-bee2-405f-a3b1-c20f3d6b828a.jpeg",
+      "SourceId": "e-commerenceMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\",
+      "BasePath": "_content/e-commerenceMVC",
+      "RelativePath": "images/products/24a14d63-bee2-405f-a3b1-c20f3d6b828a#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "slj59g0h38",
+      "Integrity": "gOQlYGtEBEm6+nkbGzIhgsOOlzrljZtuxzt0UNTMqDY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\24a14d63-bee2-405f-a3b1-c20f3d6b828a.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\29661752-5e85-4219-87ba-a72f6e2d99f0.jpeg",
+      "SourceId": "e-commerenceMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\",
+      "BasePath": "_content/e-commerenceMVC",
+      "RelativePath": "images/products/29661752-5e85-4219-87ba-a72f6e2d99f0#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xialwlnvb9",
+      "Integrity": "iewFoqb8sQhFpDzl1/TFRgbH0tMeUjdQXM6/RDCyukQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\29661752-5e85-4219-87ba-a72f6e2d99f0.jpeg"
     },
     {
       "Identity": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\a0b5b55d-4fc9-43a2-a262-d2f6aa99a0e5.jpg",
@@ -1550,12 +1613,12 @@
       "OriginalItemSpec": "wwwroot\\js\\company.js"
     },
     {
-      "Identity": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\js\\Order.js",
+      "Identity": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\js\\order.js",
       "SourceId": "e-commerenceMVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\",
       "BasePath": "_content/e-commerenceMVC",
-      "RelativePath": "js/Order#[.{fingerprint}]?.js",
+      "RelativePath": "js/order#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1564,11 +1627,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xvtr5tlza4",
-      "Integrity": "DZmRJqWnGbg9+iAk2H/4mMEsnyf93rInYQ0IZiLu+Do=",
+      "Fingerprint": "zuxr381920",
+      "Integrity": "KzeXL1dmDM0UeTPRWQhaPc/JKW+cwcUZi2KqexqH2F4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\Order.js"
+      "OriginalItemSpec": "wwwroot\\js\\order.js"
     },
     {
       "Identity": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\js\\product.js",
@@ -5524,6 +5587,88 @@
       ]
     },
     {
+      "Route": "images/products/0354947b-c03f-482b-813e-3d983af33cf1.ipbm11booh.jpg",
+      "AssetFile": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\0354947b-c03f-482b-813e-3d983af33cf1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30050"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OibUbSGkSMeUtumvfnh/DZA4UNQ989ooGjjy+UeQRwc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Jul 2025 16:33:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ipbm11booh"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/0354947b-c03f-482b-813e-3d983af33cf1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OibUbSGkSMeUtumvfnh/DZA4UNQ989ooGjjy+UeQRwc="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/0354947b-c03f-482b-813e-3d983af33cf1.jpg",
+      "AssetFile": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\0354947b-c03f-482b-813e-3d983af33cf1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30050"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OibUbSGkSMeUtumvfnh/DZA4UNQ989ooGjjy+UeQRwc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Jul 2025 16:33:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OibUbSGkSMeUtumvfnh/DZA4UNQ989ooGjjy+UeQRwc="
+        }
+      ]
+    },
+    {
       "Route": "images/products/1451367a-d593-4e31-bfc3-f059af3d523e.cu7xxn3akz.jpeg",
       "AssetFile": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\1451367a-d593-4e31-bfc3-f059af3d523e.jpeg",
       "Selectors": [],
@@ -5684,6 +5829,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-gOQlYGtEBEm6+nkbGzIhgsOOlzrljZtuxzt0UNTMqDY="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/24a14d63-bee2-405f-a3b1-c20f3d6b828a.jpeg",
+      "AssetFile": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\24a14d63-bee2-405f-a3b1-c20f3d6b828a.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4420"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gOQlYGtEBEm6+nkbGzIhgsOOlzrljZtuxzt0UNTMqDY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Jul 2025 16:34:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gOQlYGtEBEm6+nkbGzIhgsOOlzrljZtuxzt0UNTMqDY="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/24a14d63-bee2-405f-a3b1-c20f3d6b828a.slj59g0h38.jpeg",
+      "AssetFile": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\24a14d63-bee2-405f-a3b1-c20f3d6b828a.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4420"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gOQlYGtEBEm6+nkbGzIhgsOOlzrljZtuxzt0UNTMqDY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Jul 2025 16:34:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "slj59g0h38"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/24a14d63-bee2-405f-a3b1-c20f3d6b828a.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gOQlYGtEBEm6+nkbGzIhgsOOlzrljZtuxzt0UNTMqDY="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/29661752-5e85-4219-87ba-a72f6e2d99f0.jpeg",
+      "AssetFile": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\29661752-5e85-4219-87ba-a72f6e2d99f0.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7610"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iewFoqb8sQhFpDzl1/TFRgbH0tMeUjdQXM6/RDCyukQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Jul 2025 16:33:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iewFoqb8sQhFpDzl1/TFRgbH0tMeUjdQXM6/RDCyukQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/29661752-5e85-4219-87ba-a72f6e2d99f0.xialwlnvb9.jpeg",
+      "AssetFile": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\29661752-5e85-4219-87ba-a72f6e2d99f0.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7610"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iewFoqb8sQhFpDzl1/TFRgbH0tMeUjdQXM6/RDCyukQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Jul 2025 16:33:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xialwlnvb9"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/29661752-5e85-4219-87ba-a72f6e2d99f0.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iewFoqb8sQhFpDzl1/TFRgbH0tMeUjdQXM6/RDCyukQ="
         }
       ]
     },
@@ -6098,8 +6407,8 @@
       ]
     },
     {
-      "Route": "js/Order.js",
-      "AssetFile": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\js\\Order.js",
+      "Route": "js/order.js",
+      "AssetFile": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\js\\order.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6108,7 +6417,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1373"
+          "Value": "998"
         },
         {
           "Name": "Content-Type",
@@ -6116,11 +6425,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DZmRJqWnGbg9+iAk2H/4mMEsnyf93rInYQ0IZiLu+Do=\""
+          "Value": "\"KzeXL1dmDM0UeTPRWQhaPc/JKW+cwcUZi2KqexqH2F4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Jul 2025 12:59:52 GMT"
+          "Value": "Tue, 29 Jul 2025 17:28:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6130,13 +6439,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-DZmRJqWnGbg9+iAk2H/4mMEsnyf93rInYQ0IZiLu+Do="
+          "Value": "sha256-KzeXL1dmDM0UeTPRWQhaPc/JKW+cwcUZi2KqexqH2F4="
         }
       ]
     },
     {
-      "Route": "js/Order.xvtr5tlza4.js",
-      "AssetFile": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\js\\Order.js",
+      "Route": "js/order.zuxr381920.js",
+      "AssetFile": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\js\\order.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6145,7 +6454,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1373"
+          "Value": "998"
         },
         {
           "Name": "Content-Type",
@@ -6153,11 +6462,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DZmRJqWnGbg9+iAk2H/4mMEsnyf93rInYQ0IZiLu+Do=\""
+          "Value": "\"KzeXL1dmDM0UeTPRWQhaPc/JKW+cwcUZi2KqexqH2F4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Jul 2025 12:59:52 GMT"
+          "Value": "Tue, 29 Jul 2025 17:28:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6167,15 +6476,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xvtr5tlza4"
+          "Value": "zuxr381920"
         },
         {
           "Name": "label",
-          "Value": "js/Order.js"
+          "Value": "js/order.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-DZmRJqWnGbg9+iAk2H/4mMEsnyf93rInYQ0IZiLu+Do="
+          "Value": "sha256-KzeXL1dmDM0UeTPRWQhaPc/JKW+cwcUZi2KqexqH2F4="
         }
       ]
     },

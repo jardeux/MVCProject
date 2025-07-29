@@ -5,44 +5,180 @@ using Ecommerence.Models.ViewModel;
 using Ecommerence.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Stripe;
+
 
 namespace e_commerenceMVC.Areas.Customer.Controllers
 {
-    [Area("Customer")] // Bu controller'ın Customer alanında olduğunu belirtir.
-    [Authorize] // Bu controller'a erişim için kullanıcıların oturum açmış olması gerekir.
+    [Area("Customer")]
+    [Authorize]
     public class ShoppingCartController : Controller
     {
-        private IUnitOfWork _unitOfWork;
-        [BindProperty] // Bu özelliklerin model bağlama işlemi sırasında otomatik olarak doldurulmasını sağlar.    
-        public ShoppingCartVM shoppingCartVM { get; set; } // ShoppingCartViewModel, alışveriş sepeti verilerini tutar.
+
+        private readonly IUnitOfWork _unitOfWork;
+        [BindProperty]
+        public ShoppingCartVM ShoppingCartVM { get; set; }
         public ShoppingCartController(IUnitOfWork unitOfWork)
         {
-            _unitOfWork = unitOfWork; // IUnitOfWork arayüzü üzerinden veritabanı işlemlerini gerçekleştirmek için kullanılır.
+            _unitOfWork = unitOfWork;
         }
+
+
         public IActionResult Index()
         {
+
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
 
-            shoppingCartVM = new()
+            ShoppingCartVM = new()
             {
                 ShoppingCartList = _unitOfWork.shoppingCart.ButunVerileriGetir(u => u.ApplicationUserId == userId,
                 includeProperties: "Product"),
                 OrderHeader = new()
             };
 
-            
-
-            foreach (var cart in shoppingCartVM.ShoppingCartList)
+            foreach (var cart in ShoppingCartVM.ShoppingCartList)
             {
-                cart.Price = GetPriceBasedQuantity(cart);
-                shoppingCartVM.OrderHeader.OrderTotal += (cart.Price * cart.Count);
+                cart.Price = GetPriceBasedOnQuantity(cart);
+                ShoppingCartVM.OrderHeader.OrderTotal += (cart.Price * cart.Count);
             }
 
-            return View(shoppingCartVM);
+            return View(ShoppingCartVM);
         }
-        private double GetPriceBasedQuantity(ShoppingCart shoppingCart)
+
+        public IActionResult Summary()
+        {
+            var claimsIdentity = (ClaimsIdentity)User.Identity;
+            var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            ShoppingCartVM = new()
+            {
+                ShoppingCartList = _unitOfWork.shoppingCart.ButunVerileriGetir(u => u.ApplicationUserId == userId,
+                includeProperties: "Product"),
+                OrderHeader = new()
+            };
+
+            ShoppingCartVM.OrderHeader.ApplicationUser = _unitOfWork.applicationUser.Get(u => u.Id == userId);
+
+            ShoppingCartVM.OrderHeader.Name = ShoppingCartVM.OrderHeader.ApplicationUser.Name;
+            ShoppingCartVM.OrderHeader.PhoneNumber = ShoppingCartVM.OrderHeader.ApplicationUser.PhoneNumber;
+            ShoppingCartVM.OrderHeader.StreetAddress = ShoppingCartVM.OrderHeader.ApplicationUser.StreetAddress;
+            ShoppingCartVM.OrderHeader.City = ShoppingCartVM.OrderHeader.ApplicationUser.City;
+            ShoppingCartVM.OrderHeader.State = ShoppingCartVM.OrderHeader.ApplicationUser.State;
+            ShoppingCartVM.OrderHeader.PostalCode = ShoppingCartVM.OrderHeader.ApplicationUser.PostalCode;
+
+
+
+            foreach (var cart in ShoppingCartVM.ShoppingCartList)
+            {
+                cart.Price = GetPriceBasedOnQuantity(cart);
+                ShoppingCartVM.OrderHeader.OrderTotal += (cart.Price * cart.Count);
+            }
+            return View(ShoppingCartVM);
+        }
+
+        [HttpPost]
+        [ActionName("Summary")]
+        public IActionResult SummaryPOST()
+        {
+            var claimsIdentity = (ClaimsIdentity)User.Identity;
+            var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            ShoppingCartVM.ShoppingCartList = _unitOfWork.shoppingCart.ButunVerileriGetir(u => u.ApplicationUserId == userId,
+                includeProperties: "Product");
+
+            ShoppingCartVM.OrderHeader.OrderDate = System.DateTime.Now;
+            ShoppingCartVM.OrderHeader.ApplicationUserId = userId;
+
+            ApplicationUser applicationUser = _unitOfWork.applicationUser.Get(u => u.Id == userId);
+
+
+            foreach (var cart in ShoppingCartVM.ShoppingCartList)
+            {
+                cart.Price = GetPriceBasedOnQuantity(cart);
+                ShoppingCartVM.OrderHeader.OrderTotal += (cart.Price * cart.Count);
+            }
+
+            if (applicationUser.CompanyId.GetValueOrDefault() == 0)
+            {
+                //it is a regular customer 
+                ShoppingCartVM.OrderHeader.PaymentStatus = SD.PaymentStatusPending;
+                ShoppingCartVM.OrderHeader.OrderStatus = SD.StatusPending;
+            }
+            else
+            {
+                //it is a company user
+                ShoppingCartVM.OrderHeader.PaymentStatus = SD.PaymentStatusDelayedPayment;
+                ShoppingCartVM.OrderHeader.OrderStatus = SD.StatusApproved;
+            }
+            _unitOfWork.orderHeader.Add(ShoppingCartVM.OrderHeader);
+            _unitOfWork.save();
+            foreach (var cart in ShoppingCartVM.ShoppingCartList)
+            {
+                OrderDetail orderDetail = new()
+                {
+                    ProductId = cart.ProductId,
+                    OrderHeaderId = ShoppingCartVM.OrderHeader.Id,
+                    Price = cart.Price,
+                    Count = cart.Count
+                };
+                _unitOfWork.orderDetail.Add(orderDetail);
+                _unitOfWork.save();
+            }
+
+            if (applicationUser.CompanyId.GetValueOrDefault() == 0)
+            {
+                //it is a regular customer account and we need to capture payment
+                //stripe logic
+            }
+
+            return RedirectToAction(nameof(OrderConfirmation), new { id = ShoppingCartVM.OrderHeader.Id });
+        }
+
+
+        public IActionResult OrderConfirmation(int id)
+        {
+            return View(id);
+        }
+
+
+        public IActionResult Plus(int cartId)
+        {
+            var cartFromDb = _unitOfWork.shoppingCart.Get(u => u.Id == cartId);
+            cartFromDb.Count += 1;
+            _unitOfWork.shoppingCart.Guncelle(cartFromDb);
+            _unitOfWork.save();
+            return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult Minus(int cartId)
+        {
+            var cartFromDb = _unitOfWork.shoppingCart.Get(u => u.Id == cartId);
+            if (cartFromDb.Count <= 1)
+            {
+                //remove that from cart
+                _unitOfWork.shoppingCart.Remove(cartFromDb);
+            }
+            else
+            {
+                cartFromDb.Count -= 1;
+                _unitOfWork.shoppingCart.Guncelle(cartFromDb);
+            }
+
+            _unitOfWork.save();
+            return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult Remove(int cartId)
+        {
+            var cartFromDb = _unitOfWork.shoppingCart.Get(u => u.Id == cartId);
+            _unitOfWork.shoppingCart.Remove(cartFromDb);
+            _unitOfWork.save();
+            return RedirectToAction(nameof(Index));
+        }
+
+
+
+        private double GetPriceBasedOnQuantity(ShoppingCart shoppingCart)
         {
             if (shoppingCart.Count <= 50)
             {
@@ -59,146 +195,6 @@ namespace e_commerenceMVC.Areas.Customer.Controllers
                     return shoppingCart.Product.Price100;
                 }
             }
-
         }
-        public IActionResult Plus(int id)
-        {
-            var cartFromDb = _unitOfWork.shoppingCart.Get(u => u.Id == id);
-            cartFromDb.Count += 1; // Sepetteki ürün sayısını bir artırır.
-            _unitOfWork.shoppingCart.Guncelle(cartFromDb); // Güncellenen alışveriş sepeti öğesini veritabanında günceller.
-            _unitOfWork.save(); // Değişiklikleri kaydeder.
-            return RedirectToAction(nameof(Index)); // Sepet sayfasına yönlendirir.    
-        }
-        public IActionResult Minus(int id)
-        {
-            var cartfromDb = _unitOfWork.shoppingCart.Get(u => u.Id == id);
-            if(cartfromDb.Count <= 1) // Eğer sepet sayısı 1 veya daha az ise, bu öğeyi sepetten kaldırır.
-            {
-                _unitOfWork.shoppingCart.Remove(cartfromDb);
-                _unitOfWork.save();
-                return RedirectToAction(nameof(Index));
-            }
-            cartfromDb.Count -= 1;
-            
-            _unitOfWork.shoppingCart.Guncelle(cartfromDb); // Sepetteki ürün sayısını bir azaltır.
-            _unitOfWork.save();
-            return RedirectToAction(nameof(Index));
-        }
-        public IActionResult Delete(int id)
-        {
-            var cartFromDb = _unitOfWork.shoppingCart.Get(u => u.Id == id); // Veritabanından sepet öğesini alır.
-            if (cartFromDb != null)
-            {
-                _unitOfWork.shoppingCart.Remove(cartFromDb); // Sepet öğesini siler.
-                _unitOfWork.save(); // Değişiklikleri kaydeder.
-                return RedirectToAction(nameof(Index)); // Sepet sayfasına yönlendirir.
-            }
-            return NotFound(); // Eğer sepet öğesi bulunamazsa, 404 Not Found döner.
-        }
-        public IActionResult Summary()
-        {
-            var claimsIdentity = (ClaimsIdentity)User.Identity;
-            var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
-
-            shoppingCartVM = new()
-            {
-                ShoppingCartList = _unitOfWork.shoppingCart.ButunVerileriGetir(u => u.ApplicationUserId == userId,
-                includeProperties: "Product"),
-                OrderHeader = new()
-            };
-
-            shoppingCartVM.OrderHeader.ApplicationUser = _unitOfWork.applicationUser.Get(u => u.Id == userId);
-
-            shoppingCartVM.OrderHeader.Name = shoppingCartVM.OrderHeader.ApplicationUser.Name;
-            shoppingCartVM.OrderHeader.PhoneNumber = shoppingCartVM.OrderHeader.ApplicationUser.PhoneNumber;
-            shoppingCartVM.OrderHeader.StreetAddress = shoppingCartVM.OrderHeader.ApplicationUser.StreetAddress;
-            shoppingCartVM.OrderHeader.City = shoppingCartVM.OrderHeader.ApplicationUser.City;
-            shoppingCartVM.OrderHeader.State = shoppingCartVM.OrderHeader.ApplicationUser.State;
-            shoppingCartVM.OrderHeader.PostalCode = shoppingCartVM.OrderHeader.ApplicationUser.PostalCode;
-            
-
-
-
-            foreach (var cart in shoppingCartVM.ShoppingCartList)
-            {
-                cart.Price = GetPriceBasedQuantity(cart);
-                shoppingCartVM.OrderHeader.OrderTotal += (cart.Price * cart.Count);
-            }
-            return View(shoppingCartVM);
-
-        }
-        [ActionName("Summary")] // Bu metot, "Summary" adında bir HTTP GET isteği ile çağrılır.
-        [HttpPost]
-        public IActionResult SummaryPOST()
-        {
-            var claimsIdentity = (ClaimsIdentity)User.Identity;
-            var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
-            shoppingCartVM.ShoppingCartList = _unitOfWork.shoppingCart.ButunVerileriGetir(u => u.ApplicationUserId == userId, includeProperties: "Product"); // Kullanıcının alışveriş sepetindeki tüm ürünleri alır.
-
-            shoppingCartVM.OrderHeader.OrderDate = DateTime.Now; // Sipariş tarihini günceller.
-            shoppingCartVM.OrderHeader.ApplicationUserId = userId; // Sipariş başlığına kullanıcı ID'sini ekler.
-            
-            ApplicationUser applicationUser = _unitOfWork.applicationUser.Get(u => u.Id == userId); // Kullanıcı bilgilerini alır.
-            shoppingCartVM.OrderHeader.Name = applicationUser.Name;
-            
-            if (applicationUser.CompanyId.GetValueOrDefault()==0) // Eğer kullanıcı bir şirkete ait değilse, şirket bilgilerini alır.
-            {
-                shoppingCartVM.OrderHeader.OrderStatus = SD.PaymentStatusPending; // Sipariş durumu "Pending" olarak ayarlanır.
-                shoppingCartVM.OrderHeader.PaymentStatus = SD.StatusPending; // Ödeme durumu "Pending" olarak ayarlanır.
-            }
-            else
-            {
-                shoppingCartVM.OrderHeader.OrderStatus = SD.PaymentStatusDelayedPayment; // Eğer kullanıcı bir şirkete ait ise, sipariş durumu "Approved" olarak ayarlanır.
-                shoppingCartVM.OrderHeader.PaymentStatus = SD.StatusApproved; // Ödeme durumu "Approved" olarak ayarlanır.
-            }
-            _unitOfWork.orderHeader.Add(shoppingCartVM.OrderHeader); // Sipariş başlığını veritabanına ekler.
-            _unitOfWork.save(); // Değişiklikleri kaydeder.
-            foreach(var cart in shoppingCartVM.ShoppingCartList)
-            {
-                OrderDetail orderDetail = new()
-                {
-                    ProductId = cart.ProductId, // Sepetteki ürünün ID'sini alır.
-                    OrderHeaderId = shoppingCartVM.OrderHeader.Id,
-                    Price = cart.Price,
-                    Count = cart.Count // Sepetteki ürünün sayısını alır.
-                    
-
-                };
-                _unitOfWork.orderDetail.Add(orderDetail); // Sipariş detayını veritabanına ekler.
-                _unitOfWork.save();
-            }
-
-            if (applicationUser.CompanyId.GetValueOrDefault() == 0)
-            {
-                
-            
-            }
-
-            foreach (var cart in shoppingCartVM.ShoppingCartList)
-            {
-                cart.Price = GetPriceBasedQuantity(cart);
-                shoppingCartVM.OrderHeader.OrderTotal += (cart.Price * cart.Count);
-            }
-
-            return RedirectToAction(nameof(OrderConfirmation), new {id=shoppingCartVM.OrderHeader.Id}); // Alışveriş sepeti ve sipariş başlığı bilgilerini içeren ShoppingCartVM modelini görüntüler.
-
-
-        }
-        public IActionResult OrderConfirmation(int id)
-        {
-            return View(id);
-        }
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }

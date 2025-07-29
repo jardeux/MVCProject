@@ -21,12 +21,24 @@
       "PackagePath": "staticwebassets\\images\\lawn_leaf.jpg"
     },
     {
+      "Id": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\0354947b-c03f-482b-813e-3d983af33cf1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0354947b-c03f-482b-813e-3d983af33cf1.jpg"
+    },
+    {
       "Id": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\1451367a-d593-4e31-bfc3-f059af3d523e.jpeg",
       "PackagePath": "staticwebassets\\images\\products\\1451367a-d593-4e31-bfc3-f059af3d523e.jpeg"
     },
     {
       "Id": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\17a31526-233d-40f3-b311-eede6d9ddcc3.jpeg",
       "PackagePath": "staticwebassets\\images\\products\\17a31526-233d-40f3-b311-eede6d9ddcc3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\24a14d63-bee2-405f-a3b1-c20f3d6b828a.jpeg",
+      "PackagePath": "staticwebassets\\images\\products\\24a14d63-bee2-405f-a3b1-c20f3d6b828a.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\29661752-5e85-4219-87ba-a72f6e2d99f0.jpeg",
+      "PackagePath": "staticwebassets\\images\\products\\29661752-5e85-4219-87ba-a72f6e2d99f0.jpeg"
     },
     {
       "Id": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\images\\products\\a0b5b55d-4fc9-43a2-a262-d2f6aa99a0e5.jpg",
@@ -41,16 +53,16 @@
       "PackagePath": "staticwebassets\\images\\products\\fc68ec9a-bc4c-4361-b2ab-b319da6db529.jpeg"
     },
     {
-      "Id": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\js\\Order.js",
-      "PackagePath": "staticwebassets\\js\\Order.js"
-    },
-    {
       "Id": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\js\\category.js",
       "PackagePath": "staticwebassets\\js\\category.js"
     },
     {
       "Id": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\js\\company.js",
       "PackagePath": "staticwebassets\\js\\company.js"
+    },
+    {
+      "Id": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\js\\order.js",
+      "PackagePath": "staticwebassets\\js\\order.js"
     },
     {
       "Id": "C:\\Users\\umut5\\e-commerenceMVC\\e-commerenceMVC\\wwwroot\\js\\product.js",

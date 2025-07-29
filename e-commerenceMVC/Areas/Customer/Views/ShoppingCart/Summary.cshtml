@@ -32,8 +32,8 @@
 									<label>Name</label>
 								</div>
 								<div class="col-9">
-									<input asp-for="OrderHeader.ApplicationUser.Name" class="form-control" />
-									<span asp-validation-for="OrderHeader.ApplicationUser.Name" class="text-danger"></span>
+									<input asp-for="OrderHeader.Name" class="form-control" />
+									<span asp-validation-for="OrderHeader.Name" class="text-danger"></span>
 								</div>
 							</div>
 							<div class="row my-1">
@@ -94,12 +94,12 @@
 											<h6 class="my-0">@details.Product.Title</h6>
 											<small class="text-muted">Quantity: @details.Count</small>
 										</div>
-										<span class="text-muted">@((details.Product.Price * details.Count).ToString("c")) </span>
+										<span class="text-muted">@((details.Price * details.Count).ToString("c")) </span>
 									</li>
 								}
 
 								<li class="list-group-item d-flex justify-content-between bg-light">
-									<small class="text-info">Total</small>
+									<small class="text-info">Total (USD)</small>
 									<strong class="text-info">@Model.OrderHeader.OrderTotal.ToString("c")</strong>
 								</li>
 							</ul>

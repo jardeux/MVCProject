@@ -9,11 +9,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace e_commerenceMVC.Areas.Customer.Controllers
 {
-    [Area("Customer")] // Bu controller'ýn Customer alanýnda olduðunu belirtir.
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private IUnitOfWork _unitOfWork;
+        private readonly IUnitOfWork _unitOfWork;
 
         public HomeController(ILogger<HomeController> logger, IUnitOfWork unitOfWork)
         {
@@ -27,19 +27,19 @@ namespace e_commerenceMVC.Areas.Customer.Controllers
             return View(productList);
         }
 
-        public IActionResult Details(int ProductId)
+        public IActionResult Details(int productId)
         {
             ShoppingCart cart = new()
             {
-                Product = _unitOfWork.product.Get(u => u.ProductId == ProductId, includeProperties: "Category,ProductImages"),
+                Product = _unitOfWork.product.Get(u => u.ProductId == productId, includeProperties: "Category"),
                 Count = 1,
-                ProductId = ProductId
+                ProductId = productId
             };
             return View(cart);
-
         }
+
         [HttpPost]
-        [Authorize]    
+        [Authorize]
         public IActionResult Details(ShoppingCart shoppingCart)
         {
             var claimsIdentity = (ClaimsIdentity)User.Identity;
@@ -54,22 +54,20 @@ namespace e_commerenceMVC.Areas.Customer.Controllers
                 //shopping cart exists
                 cartFromDb.Count += shoppingCart.Count;
                 _unitOfWork.shoppingCart.Update(cartFromDb);
-                _unitOfWork.save();
             }
             else
             {
                 //add cart record
                 _unitOfWork.shoppingCart.Add(shoppingCart);
-                _unitOfWork.save();       
-                
             }
             TempData["success"] = "Cart updated successfully";
 
-
+            _unitOfWork.save();
 
 
             return RedirectToAction(nameof(Index));
         }
+
         public IActionResult Privacy()
         {
             return View();

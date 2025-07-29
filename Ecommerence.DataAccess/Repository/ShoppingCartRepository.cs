@@ -20,8 +20,8 @@ namespace Ecommerence.DataAccess.Repository
         public void Guncelle(ShoppingCart obj)
         {
             _db.shoppingCarts.Update(obj);
-
-
         }
+
+
     }
 }

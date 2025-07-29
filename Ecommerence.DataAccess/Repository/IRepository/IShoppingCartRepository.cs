@@ -12,8 +12,5 @@ namespace Ecommerence.DataAccess.Repository.IRepository
     {
         public void Guncelle(ShoppingCart obj); // Category güncelleme işlemi için bir metod tanımlanır.   
         
-        
-
-
     }
 }

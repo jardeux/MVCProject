@@ -23,6 +23,12 @@ namespace Ecommerence.DataAccess.Repository
         {
             _db.applicationUsers.Update(obj);
         }
+
+        public ApplicationUser GetById(string id)
+        {
+            return _db.applicationUsers.FirstOrDefault(u => u.Id == id);
+        }
+
         
         
     }
