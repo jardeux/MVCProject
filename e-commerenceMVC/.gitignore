@@ -1,0 +1,5 @@
+./vs
+.env
+e-commerenceMVC/bin/
+e-commerenceMVC/Program.cs
+e-commerenceMVC/appsettings.json

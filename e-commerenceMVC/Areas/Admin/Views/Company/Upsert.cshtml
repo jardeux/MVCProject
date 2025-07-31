@@ -1,0 +1,66 @@
+﻿@using Ecommerence.Models
+@model Company
+<div class="card shadow border-0 mt-4">
+	<div class="card-header bg-secondary bg-gradient m-lg-0 p-lg-3">
+		<div action="row">
+			<div class="col-12 text-center">
+				<h2 class="text-white py-2">@(Model.CompanyId!=0?"Update":"Create") Company</h2>
+			</div>
+		</div>
+	</div>
+<div class="card-body p-4">
+		<form method="post" class="row" enctype="multipart/form-data">
+			<input asp-for="CompanyId" hidden />
+			<div class="row">
+				<div class="col-10">
+					<div class="border-black">
+						<div asp-validation-summary="All"></div>
+						<div class="mb-3">
+							<label asp-for="CompanyName"></label>
+							<input asp-for="CompanyName" type="text" class="form-control" />
+							<span asp-validation-for="CompanyName" class="text-danger"></span>
+
+						</div
+						<div class="mb-3">
+							<label asp-for="PhoneNumber"></label>
+							<input asp-for="PhoneNumber" type="text" class="form-control" />
+						</div>
+						<div class="mb-3">
+							<label asp-for="State"></label>
+							<input asp-for="State" type="text" class="form-control" />
+
+						</div>
+						<div class="mb-3">
+							<label asp-for="City"></label>
+							<input asp-for="City" type="text" class="form-control" />
+
+						</div>
+						<div class="mb-3">
+							<label asp-for="PostalCode"></label>
+							<input asp-for="PostalCode" type="text" class="form-control" />
+						</div>
+						<div class="mb-3">
+							<label asp-for="StreetAdress"></label>
+							<input asp-for="StreetAdress" type="text" class="form-control" />
+						</div>
+
+						
+						<div class="d-flex justify-content-center">
+							<button class="btn btn-primary row form-control" style="width:150px">@(Model.CompanyId != 0 ? "Update" : "Create")</button>
+							<div class="ps-3">
+								<a asp-controller="Company" asp-action="Index" class="ms-4 row btn btn-foutline-primary btn-light border form-control" style="width:150px">Back to List</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</form>
+		@section Scripts {
+			<partial name="_ValidationScriptsPartial" />
+		}
+</div>
+</div>
+
+
+
